@@ -20,5 +20,5 @@ test('division av 12 och 3 ska vara 4', () => {
 });
 
 test('division av 5 och 0 ska vara odefinerat', () => {
-    expect(calc.div(5,1)).toBe('undefined');
+    expect(calc.div(5,0)).toBe('undefined');
 });
