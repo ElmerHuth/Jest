@@ -4,19 +4,19 @@ function valid(x, y){
 
 class calculator{
     add(x, y){
-        return valid(x, y) ? x + y : 'invalid input'
+        return valid(x, y) ? x + y : 'invalid input';
     };
     
     sub(x, y){
-        return x - y;
+        return valid(x, y) ? x - y : 'invalid input';
     }
     
     mul(x, y){
-        return x * y;
+        return valid(x, y) ? x * y : 'invalid input';
     }
     
     div(x, y){
-        return y == 0 ? "undefined" : x / y; 
+        return valid(x, y) ? (y == 0 ? "undefined" : x / y) : 'invalid input'; 
     }
 }
 

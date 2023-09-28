@@ -26,3 +26,15 @@ test('division av 5 och 0 ska vara odefinerat', () => {
 test(`addition av "1" och 2 ska vara invalid input`, () => {
     expect(calc.add("1",2)).toBe("invalid input");
 });
+
+test('subtraktion av "10" och "5" ska vara invalid input', () => {
+    expect(calc.sub("10","5")).toBe("invalid input");
+});
+
+test('division av "string" och 3 ska vara 4', () => {
+    expect(calc.div("string",3)).toBe(4);
+});
+
+test('multiplikation av 6 och "8" ska vara invalid input', () => {
+    expect(calc.mul(6,"8")).toBe("invalid input");
+});
