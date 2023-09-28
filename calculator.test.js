@@ -32,7 +32,7 @@ test('subtraktion av "10" och "5" ska vara invalid input', () => {
 });
 
 test('division av "string" och 3 ska vara 4', () => {
-    expect(calc.div("string",3)).toBe(4);
+    expect(calc.div("string",3)).toBe("invalid input");
 });
 
 test('multiplikation av 6 och "8" ska vara invalid input', () => {
